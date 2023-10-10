@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Información sobre las siguientes tecnologías
 
-## Getting Started
+## ESLint
 
-First, run the development server:
+Es una herramienta que nos ayuda a identificar y reportar patrones de códigos inadecuados con el fin de hacer nuestro código mas consistente y para evitar bugs.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esta herramienta nos permite utilizar clases pre-construidas para facilitar y agilizar el diseño de nuestra aplicación web.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Organization and File Colocation in NextJS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+En la documentación se tratan diferentes temas los cuales incluyen:
 
-## Learn More
+- **Colocación segura por defecto:** En el directorio de la aplicación, la jerarquía de carpetas anidadas define la estructura de la ruta. Cada carpeta representa un segmento de ruta que se mapea a un segmento correspondiente en una ruta URL. Sin embargo, una ruta no es accesible públicamente hasta que se añade un archivo page.js o route.js a un segmento de ruta.
 
-To learn more about Next.js, take a look at the following resources:
+- **Carpetas privadas:** Puedes crear carpetas privadas añadiendo un guion bajo al principio del nombre de la carpeta: _nombreCarpeta. Esto indica que la carpeta es un detalle de implementación privado y no debe ser considerada por el sistema de enrutamiento.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Grupos de rutas:** Puedes crear grupos de rutas envolviendo una carpeta en paréntesis: (nombreCarpeta). Esto indica que la carpeta es para propósitos organizativos y no debe ser incluida en la ruta URL del camino.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Directorio src:** Next.js soporta almacenar el código de la aplicación (incluyendo app) dentro de un directorio src opcional.
